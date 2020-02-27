@@ -8,12 +8,18 @@ function App() {
     <React.Fragment>
       <Windows>
         <Window name="File of the day 1" iconImageSrc={fileIconImage} />
-        <Window name="File of the day 2" iconImageSrc={fileIconImage}>
-          <img
-            style={{ display: "block", width: "100%", maxWidth: "100%" }}
-            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-            alt="Woman"
-          />
+        <Window
+          name="River.jpg"
+          iconImageSrc={
+            "https://images.pexels.com/photos/2217365/pexels-photo-2217365.jpeg?auto=compress&cs=tinysrgb&w=50"
+          }
+        >
+          <div style={{ textAlign: "center" }}>
+            <img
+              src="https://images.pexels.com/photos/2217365/pexels-photo-2217365.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+              alt="River"
+            />
+          </div>
         </Window>
         <Window name="File 3" iconImageSrc={fileIconImage}>
           <div className="css-12n5kwj">

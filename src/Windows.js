@@ -48,7 +48,8 @@ function Windows({ children }) {
         width: "100%",
         background: "#f4f4f4",
         overflow: "hidden",
-        position: "relative"
+        position: "relative",
+        userSelect: "none"
       }}
     >
       <WindowContext.Provider

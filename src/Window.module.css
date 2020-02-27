@@ -16,14 +16,14 @@
   display: flex;
   align-items: center;
   box-shadow: 0 1px 2px #ccc;
-  padding-left: 4px;
+  padding-left: 6px;
 }
 
 .title {
   font-size: 1.1rem;
   font-weight: 400;
   flex-grow: 1;
-  margin-left: 5px;
+  margin-left: 8px;
   pointer-events: none;
   white-space: nowrap;
   overflow-x: hidden;
@@ -54,6 +54,11 @@
 .icon {
   width: 28px;
   height: 26px;
+  border-radius: 2px;
+}
+
+.titleBar .icon {
+  pointer-events: none;
 }
 
 .content {

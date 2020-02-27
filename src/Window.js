@@ -11,8 +11,6 @@ import windowReducer, { defaultState, actionTypes } from "./windowReducer";
 
 import styles from "./Window.module.css";
 
-let windowCount = 1;
-
 function Window({
   name = "Untitled",
   iconImageSrc,
@@ -101,8 +99,11 @@ function Window({
   }
 
   function openWindow() {
-    // dispatch({ type: actionTypes.SET_OPEN, payload: true });
-    const stagger = 25 * windowCount++;
+    const stagger = 25 * (Window.windowCount + 1);
+
+    if (!open) {
+      Window.windowCount++;
+    }
 
     dispatch({
       type: actionTypes.OPEN,
@@ -112,8 +113,7 @@ function Window({
   }
 
   function closeWindow() {
-    // dispatch({ type: actionTypes.SET_OPEN, payload: false });
-    windowCount--;
+    Window.windowCount--;
     dispatch({ type: actionTypes.CLOSE, payload: false });
   }
 
@@ -162,8 +162,12 @@ function Window({
   );
 }
 
+Window.windowCount = 0;
+
 function DefaultIcon({ imageSrc }) {
-  return <img className={styles.icon} src={imageSrc} alt="icon" />;
+  return (
+    <img draggable={false} className={styles.icon} src={imageSrc} alt="icon" />
+  );
 }
 
 function MaximizeButton({ onClick, maximized }) {
