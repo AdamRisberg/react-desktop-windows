@@ -1,0 +1,178 @@
+.window {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+  background: #fff;
+  outline: none;
+}
+
+.titleBar {
+  cursor: move;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 2px #ccc;
+  padding-left: 4px;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  flex-grow: 1;
+  margin-left: 5px;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  padding-right: 8px;
+}
+
+.button {
+  padding: 6px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  height: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.button:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 28px;
+  height: 26px;
+}
+
+.content {
+  padding: 4px;
+  overflow: auto;
+  flex-grow: 1;
+  user-select: text;
+}
+
+.left,
+.right,
+.top,
+.bottom,
+.topLeft,
+.topRight,
+.bottomLeft,
+.bottomRight {
+  position: absolute;
+  border: 4px solid transparent;
+}
+
+.left,
+.right {
+  top: 4px;
+  bottom: 4px;
+  width: 0px;
+  cursor: col-resize;
+}
+
+.left {
+  left: -5px;
+}
+
+.right {
+  right: -5px;
+}
+
+.top,
+.bottom {
+  height: 0px;
+  left: 4px;
+  right: 4px;
+  cursor: row-resize;
+}
+
+.top {
+  top: -5px;
+}
+
+.bottom {
+  bottom: -5px;
+}
+
+.topLeft,
+.topRight,
+.bottomLeft,
+.bottomRight {
+  width: 0px;
+  height: 0px;
+}
+
+.topLeft,
+.topRight {
+  top: -5px;
+}
+
+.bottomLeft,
+.bottomRight {
+  bottom: -5px;
+}
+
+.topLeft,
+.bottomLeft {
+  left: -5px;
+}
+
+.topRight,
+.bottomRight {
+  right: -5px;
+}
+
+.topLeft {
+  cursor: nw-resize;
+}
+
+.topRight {
+  cursor: ne-resize;
+}
+
+.bottomLeft {
+  cursor: sw-resize;
+}
+
+.bottomRight {
+  cursor: se-resize;
+}
+
+.fileIconButton {
+  display: inline-block;
+  width: 80px;
+  padding: 15px 5px;
+  text-align: center;
+  border: 1px solid transparent;
+  background: none;
+}
+
+.fileIconButton:hover {
+  background: rgba(0, 100, 255, 0.1);
+  border: 1px solid rgba(0, 100, 255, 0.2);
+}
+
+.fileIconButton img {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 4px;
+}
+
+.fileIconButton span {
+  word-break: break-all;
+}
