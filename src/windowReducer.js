@@ -62,10 +62,17 @@ function windowReducer(state = defaultState, action) {
         return state;
       }
 
+      const { containerSize, x, y } = action.payload;
+
+      const width = containerSize.width * 0.75;
+      const height = containerSize.height * 0.75;
+
       const newPosition = {
         ...state.position,
-        left: action.payload.x,
-        top: action.payload.y
+        left: x,
+        top: y,
+        width: width,
+        height: height
       };
 
       return {

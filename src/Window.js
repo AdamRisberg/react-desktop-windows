@@ -107,7 +107,7 @@ function Window({
 
     dispatch({
       type: actionTypes.OPEN,
-      payload: { x: stagger, y: stagger }
+      payload: { x: stagger, y: stagger, containerSize }
     });
     bringToFront(windowIdRef.current);
   }
