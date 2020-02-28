@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-desktop-windows/static/css/main.420a01a1.chunk.css",
+    "main.js": "/react-desktop-windows/static/js/main.1eed5b25.chunk.js",
+    "main.js.map": "/react-desktop-windows/static/js/main.1eed5b25.chunk.js.map",
+    "runtime-main.js": "/react-desktop-windows/static/js/runtime-main.01c10696.js",
+    "runtime-main.js.map": "/react-desktop-windows/static/js/runtime-main.01c10696.js.map",
+    "static/js/2.6ff0a163.chunk.js": "/react-desktop-windows/static/js/2.6ff0a163.chunk.js",
+    "static/js/2.6ff0a163.chunk.js.map": "/react-desktop-windows/static/js/2.6ff0a163.chunk.js.map",
+    "index.html": "/react-desktop-windows/index.html",
+    "precache-manifest.729a29228690b7bed116ed1b76389a99.js": "/react-desktop-windows/precache-manifest.729a29228690b7bed116ed1b76389a99.js",
+    "service-worker.js": "/react-desktop-windows/service-worker.js",
+    "static/css/main.420a01a1.chunk.css.map": "/react-desktop-windows/static/css/main.420a01a1.chunk.css.map",
+    "static/js/2.6ff0a163.chunk.js.LICENSE.txt": "/react-desktop-windows/static/js/2.6ff0a163.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01c10696.js",
+    "static/js/2.6ff0a163.chunk.js",
+    "static/css/main.420a01a1.chunk.css",
+    "static/js/main.1eed5b25.chunk.js"
+  ]
+}
