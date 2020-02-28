@@ -1,0 +1,85 @@
+.form {
+  padding: 15px;
+  background-color: #f4f5f6;
+  color: #333;
+  text-align: right;
+  min-height: 100%;
+}
+
+.formTitle {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.formSubtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.formInput {
+  display: block;
+  margin-top: 3px;
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  background-color: #fff;
+  color: inherit;
+  border: 1px solid #ccc;
+}
+
+.formButton {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  background-color: #567;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.formButton:hover {
+  background-color: #456;
+}
+
+.formButton:active {
+  background-color: #345;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sampleText {
+  padding: 20px;
+}
+
+.sampleText p {
+  margin-bottom: 20px;
+}
+
+.header {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.header img {
+  width: 30px;
+}

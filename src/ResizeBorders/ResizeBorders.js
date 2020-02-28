@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Window.module.css";
+import styles from "./ResizeBorders.module.css";
 
 function ResizeBorders({ windowId }) {
   return (

@@ -1,0 +1,70 @@
+.window {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+  background: #fff;
+  outline: none;
+}
+
+.titleBar {
+  cursor: move;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 2px #ccc;
+  padding-left: 6px;
+  z-index: 1;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  flex-grow: 1;
+  margin-left: 8px;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  padding-right: 8px;
+}
+
+.button {
+  padding: 6px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  height: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.button:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 28px;
+  height: 26px;
+  border-radius: 2px;
+}
+
+.titleBar .icon {
+  pointer-events: none;
+}
+
+.content {
+  /* padding: 4px; */
+  overflow: auto;
+  flex-grow: 1;
+  user-select: text;
+}

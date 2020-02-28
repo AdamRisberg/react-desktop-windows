@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Windows.module.css";
 
 export const WindowContext = React.createContext({});
 
@@ -41,17 +42,7 @@ function Windows({ children }) {
   }
 
   return (
-    <div
-      ref={containerRef}
-      style={{
-        height: "100%",
-        width: "100%",
-        background: "#f4f4f4",
-        overflow: "hidden",
-        position: "relative",
-        userSelect: "none"
-      }}
-    >
+    <div ref={containerRef} className={styles.windows}>
       <WindowContext.Provider
         value={{
           containerSize,

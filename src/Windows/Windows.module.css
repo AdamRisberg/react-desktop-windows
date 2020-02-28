@@ -1,0 +1,12 @@
+.windows {
+  height: 100%;
+  width: 100%;
+  background: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}

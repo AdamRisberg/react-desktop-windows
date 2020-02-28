@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./Window.module.css";
+import styles from "./FileIcon.module.css";
 
 function FileIcon({ name, imageSrc, onClick, windowId }) {
   return (
     <button
-      className={styles.fileIconButton}
+      className={styles.fileIcon}
       onClick={onClick}
       data-window-id={windowId}
       aria-label={`Open ${name}`}

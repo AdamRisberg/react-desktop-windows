@@ -64,7 +64,7 @@ function windowReducer(state = defaultState, action) {
 
       const { containerSize, x, y } = action.payload;
 
-      const width = containerSize.width * 0.75;
+      const width = Math.min(containerSize.width * 0.75, 600);
       const height = containerSize.height * 0.75;
 
       const newPosition = {

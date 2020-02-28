@@ -1,12 +1,8 @@
 import React from "react";
 import { v1 as uid } from "uuid";
-import restoreImg from "./images/restore-window-50-2.png";
-// import minimizeImg from "./images/minimize-window-50-2.png";
-import maximizeImg from "./images/maximize-window-50-2.png";
-import deleteImg from "./images/delete-50-3.png";
-import { WindowContext } from "./Windows";
-import FileIcon from "./FileIcon";
-import ResizeBorders from "./ResizeBorders";
+import { WindowContext } from "../Windows/Windows";
+import FileIcon from "../FileIcon/FileIcon";
+import ResizeBorders from "../ResizeBorders/ResizeBorders";
 import windowReducer, { defaultState, actionTypes } from "./windowReducer";
 
 import styles from "./Window.module.css";
@@ -150,7 +146,6 @@ function Window({
           >
             <DefaultIcon imageSrc={iconImageSrc} />
             <h2 className={styles.title}>{name}</h2>
-            {/* <MinimizeButton /> */}
             <MaximizeButton onClick={maximize} maximized={maximized} />
             <CloseButton onClick={closeWindow} />
           </div>
@@ -174,9 +169,17 @@ function MaximizeButton({ onClick, maximized }) {
   return (
     <button className={styles.button} onClick={onClick}>
       {maximized ? (
-        <img className={styles.icon} src={restoreImg} alt="restore" />
+        <img
+          className={styles.icon}
+          src="images/restore-window.png"
+          alt="restore"
+        />
       ) : (
-        <img className={styles.icon} src={maximizeImg} alt="maximize" />
+        <img
+          className={styles.icon}
+          src="images/maximize-window.png"
+          alt="maximize"
+        />
       )}
     </button>
   );
@@ -185,17 +188,9 @@ function MaximizeButton({ onClick, maximized }) {
 function CloseButton({ onClick }) {
   return (
     <button className={styles.button} onClick={onClick}>
-      <img className={styles.icon} src={deleteImg} alt="close" />
+      <img className={styles.icon} src="images/delete.png" alt="close" />
     </button>
   );
 }
-
-// function MinimizeButton({ onClick }) {
-//   return (
-//     <button className={styles.button} onClick={onClick}>
-//       <img className={styles.icon} src={minimizeImg} alt="minimize" />
-//     </button>
-//   );
-// }
 
 export default Window;
