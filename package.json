@@ -2,6 +2,12 @@
   "name": "react-desktop-windows",
   "version": "0.1.0",
   "description": "Experimental components for creating a desktop like experience using React.",
+  "author": "Adam Risberg <myniztan@hotmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdamRisberg/react-desktop-windows"
+  },
+  "homepage": "https://adamrisberg.github.io/react-desktop-windows",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -16,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
